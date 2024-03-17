@@ -21,6 +21,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.simplebankinguiapp_kotlin.component.BottomNavigationBar
+import com.example.simplebankinguiapp_kotlin.component.WalletSection
 import com.example.simplebankinguiapp_kotlin.ui.theme.SimpleBankingUIAppKotlinTheme
 
 class MainActivity : ComponentActivity() {
@@ -34,7 +35,6 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    //Greeting("Android")
                     HomeScreen();
                 }
             }
@@ -64,7 +64,8 @@ fun HomeScreen () {
        .fillMaxSize()
        .padding(padding)) {
            // Wallet section Content of the screen
-           Spacer(modifier = Modifier.height(16.dp))
+           WalletSection()
+          // Spacer(modifier = Modifier.height(16.dp))
        }
    }
 }
@@ -75,12 +76,4 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
         text = "Hello $name!",
         modifier = modifier
     )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    SimpleBankingUIAppKotlinTheme {
-        Greeting("Android")
-    }
 }
