@@ -21,6 +21,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.simplebankinguiapp_kotlin.component.BottomNavigationBar
+import com.example.simplebankinguiapp_kotlin.component.CardSection
 import com.example.simplebankinguiapp_kotlin.component.WalletSection
 import com.example.simplebankinguiapp_kotlin.ui.theme.SimpleBankingUIAppKotlinTheme
 
@@ -65,6 +66,7 @@ fun HomeScreen () {
        .padding(padding)) {
            // Wallet section Content of the screen
            WalletSection()
+           CardSection()
           // Spacer(modifier = Modifier.height(16.dp))
        }
    }

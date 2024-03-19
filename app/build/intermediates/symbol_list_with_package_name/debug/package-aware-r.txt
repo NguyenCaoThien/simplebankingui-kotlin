@@ -61,6 +61,8 @@ drawable ic_call_decline
 drawable ic_call_decline_low
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_mastercard
+drawable ic_visa
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
